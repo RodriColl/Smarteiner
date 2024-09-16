@@ -1,15 +1,34 @@
-
-body {
-    background-color: #f4f4f4;
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #36a9e1;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
 
+
+/* NAVBAR */
 nav {
-    background-color: #ffff;
+    /* background-color: #ffffff; */
     padding: 10px;
+    position: sticky; /* Se convierte en sticky al desplazarse */
+    top: 0; /* Se adhiere a la parte superior */
+    width: 100%;
+    background-color: transparent; /* Fondo transparente inicialmente */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transición suave para el cambio de fondo y sombra */
+    z-index: 1000; /* Asegura que el nav esté por encima de otros elementos */
+}
+
+nav::after {
+    content: "";
+    display: block;
+    height: 1px; /* Ajusta la altura del borde inferior según sea necesario */
+    background-color: transparent; /* Se vuelve visible cuando el usuario se desplaza */
+    transition: background-color 0.3s;
 }
 
 .nav-container {
@@ -18,6 +37,30 @@ nav {
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 10px;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.nav-links a:hover {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+nav.sticky {
+    background-color: #fff; /* Fondo blanco cuando está fijo */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra sutil para mejorar la visibilidad */
 }
 
 .logo img {
@@ -30,7 +73,6 @@ nav {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
 }
-
 
 .nav-links a {
     color: black;
@@ -46,15 +88,18 @@ nav {
     transition: 0.5s;
 }
 
+
+/* MAIN */
 main {
     padding: 20px;
-    background-color: #fff;
 }
 
+
+/* FOOTER */
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     position: absolute;
     width: 100vw;
@@ -74,10 +119,17 @@ footer p {
 }
 
 .redes a{
-    color: #fff;
+    color: #ffff;
     text-decoration: none;
 }
 
+.redes a:hover {
+    color: #36a9e1;
+    transition: 0.5s;
+}
+
+
+/* FORMULARIO DE CONTACTO */
 .contact-form {
     display: flex;
     flex-direction: column;
