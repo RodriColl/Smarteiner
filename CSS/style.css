@@ -1,3 +1,4 @@
+
 body {
     background-color: #f4f4f4;
     margin: 0;
@@ -60,6 +61,10 @@ footer {
     bottom: 0;
 }
 
+footer p {
+    font-size: 10px;
+}
+
 .redes {
     display: flex;
     align-items: center;
@@ -71,4 +76,59 @@ footer {
 .redes a{
     color: #fff;
     text-decoration: none;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 5px;
+    border-color: #000000;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.contact-form button:hover {
+    background-color: #000000;
+    color: white;
+    transition: 0.5s;
+    border-color: white;
 }

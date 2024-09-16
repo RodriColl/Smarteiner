@@ -27,15 +27,42 @@
     <main>
         <h2>Smarteiner</h2>
         <p>Este es el contenido de tu página. Puedes modificarlo según tus necesidades.</p>
+
+        <!-- FormContacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="#" method="post" class="contact-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono de contacto</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required oninput="validatePhone(this)">
+
+                <label for="subject">Asunto:</label>
+                <select id="subject" name="subject" required>
+                    <option value="" disabled selected>Seleccione un asunto</option>
+                    <option value="Contenedor Dry">Contenedor Dry</option>
+                    <option value="Contenedor Reefer">Contenedor Reefer</option>
+                </select>
+    
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+    
+                <button type="submit">ENVIAR</button>
+            </form>
+        </section>
     </main>
     
     <footer>
         <div class="redes">
             <a href="https://instagram.com/smarteiner_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://facebook.com/profile.php?id=61565912754133" target="_blank"><i class="fa-brands fa-facebook"></i></a>
         </div>
         <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
     </footer>
-    
+    <script src="Js/script.js"></script>
     </body>
 </html>
