@@ -53,14 +53,34 @@ main {
     padding: 20px;
 }
 
+.slider {
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+    border: 4px solid #0054d1;
+}
 
+.slide-track {
+    position: absolute;
+    height: 100%;
+    opacity: 0;
+    inset: 0;
+    animation: slide-show 12s infinite;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 /* ----------FOOTER---------- */
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     background-color: #333;
     color: #fff;
-    position: absolute;
+    /* position: absolute; */
     width: 100vw;
     bottom: 0;
 }
@@ -82,6 +102,10 @@ footer p {
     text-decoration: none;
 }
 
+.redes a:hover {
+    color: #36a9e1;
+    transition: 0.5s;
+}
 
 /* ----------FORM---------- */
 .contact-form {
