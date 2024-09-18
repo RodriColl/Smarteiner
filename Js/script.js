@@ -7,4 +7,3 @@ function validatePhone(input) {
         input.setCustomValidity('');
     }
 }
-
