@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="shortcut icon" href="./Images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.typekit.net/krr2tde.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Smarteiner</title>
 </head>
@@ -17,17 +18,19 @@
                     <img src="./Images/logo.png" alt="Logo">
                 </a>
                 <div class="nav-links">
-                    <a href="#home">Inicio</a>
-                    <a href="#about">Sobre Nosotros</a>
-                    <a href="#contact">Contacto</a>
+                    <a href="#inicio">Inicio</a>
+                    <a href="#SobreNosotros">Sobre Nosotros</a>
+                    <a href="#contacto">Contacto</a>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <h2>Smarteiner</h2>
-        <p>Este es el contenido de tu página. Puedes modificarlo según tus necesidades.</p>
-
+        <div class="inicio" id="inicio">
+            <img src="./Images/logo_inicio.png" alt="">
+            <h1>Smarteiner</h1>
+        </div>
+        
         <div class="contenedor">
             <div class="wrapper">
                 <div class="wrapper-holder">
@@ -39,10 +42,35 @@
                 </div>
             </div>
         </div>
+        <h1 class="titulo" id="SobreNosotros" >NUESTROS SERVICIOS</h1>
+        <div class="card-container">
+            <div class="card">
+                <img class="img-reefer" src="./Images/Animacion/reefer1-1.jpg" alt="Reefer">
+                <div class="info">
+                    <h1>CONTENEDOR REEFER</h1>
+                    <p>Los contenedores <span>reefers</span> son unidades refrigeradas usadas para transportar productos perecederos a temperatura controlada.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="img-contenedor" src="./Images/Animacion/Contenedor.jpg" alt="Contenedor">
+                <div class="info">
+                    <h1>CONTENDEOR SECO</h1>
+                    <p>Los contenedores secos son unidades estándar usadas para transportar mercancías no perecederas sin control de temperatura.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="img-transporte" src="./Images/Animacion/transporte1-1.jpg" alt="Transporte">
+                <div class="info">
+                    <h1>TRANSPORTE</h1>
+                    <p>El transporte de contenedores facilita el movimiento eficiente de mercancías globales por mar, tierra y aire.</p>
+                </div>
+            </div>
+        </div>
+
     </main>
         <!-- FormContacto -->
         <section id="contacto">
-            <h2>Contacto</h2>
+            <h1 class="titulo">CONTACTO</h1>
             <form action="#" method="post" class="contact-form">
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" required>
@@ -66,7 +94,7 @@
                 <button type="submit">ENVIAR</button>
             </form>
         </section>
-    
+    <a href="https://wa.me/5493513770107" class="btn-wsp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
     <footer>
         <div class="redes">
             <a href="https://instagram.com/smarteiner_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
