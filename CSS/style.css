@@ -124,31 +124,31 @@ main {
 }
 
 .contenedor #slider-imagen1{
-    background-image: url(/Images/Animacion/reefer1-1.jpg);
+    background-image: url(../Images/Animacion/reefer1-1.jpg);
     background-position: center;
     background-attachment: cover;
     background-size: cover;
 }
 .contenedor #slider-imagen2{
-    background-image: url(/Images/Animacion/refeer1-2.jpg);
+    background-image: url(../Images/Animacion/refeer1-2.jpg);
     background-position: center;
     background-attachment: cover;
     background-size: cover;
 }
 .contenedor #slider-imagen3{
-    background-image: url(/Images/Animacion/reefer1-3.jpg);
+    background-image: url(../Images/Animacion/reefer1-3.jpg);
     background-position: center;
     background-attachment: cover;
     background-size: cover;
 }
 .contenedor #slider-imagen4{
-    background-image: url(/Images/Animacion/reefer1-4.jpg);
+    background-image: url(../Images/Animacion/reefer1-4.jpg);
     background-position: center;
     background-attachment: cover;
     background-size: cover;
 }
 .contenedor #slider-imagen5{
-    background-image: url(/Images/Animacion/transporte1-1.jpg);
+    background-image: url(../Images/Animacion/transporte1-1.jpg);
     background-position: center;
     background-attachment: cover;
     background-size: cover;
