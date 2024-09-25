@@ -95,8 +95,8 @@ main {
     padding-top: 10px;
 }
 #inicio img {
-    height: 50px;
-    margin-right: 15px;
+    height: 100px;
+    margin-right: 20px;
 }
 
 .contenedor {
@@ -174,7 +174,6 @@ main {
     height: 500px;
     margin: 20px;
 }
-
 
 .img-reefer, .img-contenedor, .img-transporte{
     height: 200px;
