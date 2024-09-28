@@ -1,3 +1,7 @@
+:root{
+    --titulo-h1: #ffffff;
+    --text-size: 30px;
+}
 
 body {
     background-color: #36a9e1;
@@ -11,7 +15,11 @@ body {
 nav {
     background-color: #ffff;
     padding: 10px;
-    width: 100vw
+    width: 100vw;
+    height: 40px;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 .nav-container {
@@ -53,6 +61,20 @@ main {
     padding: 20px;
 }
 
+.Nosotros{
+    height: 400px;
+    padding-top: 50px;
+}
+.Nosotros p {
+    font-size: var(--text-size);
+    font-weight: 300;
+    font-style: italic;
+    color: black;
+}
+
+.Nosotros, .titulo{
+    color: var(--titulo-h1);
+}
 .btn-wsp {
     position: fixed;
     width: 55px;
@@ -84,7 +106,7 @@ main {
 #inicio{
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 90px;
 }
 
 #inicio h1 {
@@ -93,6 +115,7 @@ main {
     font-style: normal;
     text-transform: uppercase;
     padding-top: 10px;
+    pointer-events: none;
 }
 #inicio img {
     height: 100px;
@@ -176,7 +199,7 @@ main {
 }
 
 .img-reefer, .img-contenedor, .img-transporte{
-    height: 200px;
+    height: 300px;
     /* border: 4px solid #ffff; */
     border-radius: 10px;
 }
@@ -274,4 +297,14 @@ footer p {
     color: white;
     transition: 0.5s;
     border-color: white;
+}
+
+/* -------QUERYS------ */
+
+@media screen and (max-width:1366px) {
+    .img-reefer, .img-contenedor, .img-transporte{
+        height: 200px;
+        /* border: 4px solid #ffff; */
+        border-radius: 10px;
+    }
 }
